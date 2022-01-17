@@ -1,0 +1,620 @@
+<template>
+  <div class="home">
+    <section id="home">
+      <div class="welcome">
+        <div class="container mt-5 mb-5 text-center">
+          <div class="row">
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-end align-items-center"
+            >
+              <div class="home-konten">
+                <h2 class="mt-5 lead fw-normal" style="font-size: 30px">
+                  Hi, Welcome to my Page
+                </h2>
+                <h1>Anyway my name is <span>Tegar</span> !</h1>
+                <p class="sub">
+                  This is my official Portfolio website to showcase my all works
+                  related to <br class="responsive" />
+                  web development
+                </p>
+                <div
+                  class="container d-flex justify-content-center align-items-center"
+                >
+                  <div class="center">
+                    <vs-button @click="active = !active" size="large">
+                      Hire Me
+                    </vs-button>
+                    <vs-dialog v-model="active">
+                      <template #header>
+                        <h4 class="not-margin">Get my <b>Contact</b></h4>
+                      </template>
+                      <div class="con-content">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12 d-flex align-items-center mb-3">
+                              <img src="@/assets/img/inbox.svg" alt="email" />
+                              <p class="ms-2 m-0">
+                                tegarumarabdillah@gmail.com
+                              </p>
+                            </div>
+                            <div class="col-12 d-flex align-items-center mb-3">
+                              <img
+                                src="@/assets/img/instagram.svg"
+                                alt="instagram"
+                              />
+                              <p class="ms-2 m-0">@tegar.ua</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 d-flex align-items-center mb-3">
+                              <img
+                                src="@/assets/img/linkedin.svg"
+                                alt="linkedin"
+                              />
+                              <p class="ms-2 m-0">Tegar Umar Abdillah</p>
+                            </div>
+                            <div class="col-12 d-flex align-items-center mb-3">
+                              <img src="@/assets/img/github.svg" alt="github" />
+                              <p class="ms-2 m-0">TegarUA</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </vs-dialog>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center align-items-end">
+              <div class="home-img">
+                <img
+                  src="@/assets/img/trip.png"
+                  class="profile mt-5"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="mt-5 mb-4 text-center">
+          <div class="container">
+            <h1 class="mb-4">About <span> me </span></h1>
+          </div>
+          <section class="jumbotron text-center line">
+            <h1 class="display-4">Tegar Umar <span> Abdillah </span></h1>
+            <p class="lead job">
+              Web Programmer | <span>Software Engineering</span>
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="line">
+          <p class="lead text-lg-center caption">
+            Hi, my name is Tegar Umar Abdillah. I have an interest in
+            <span> software engineering</span> and until now I'm still learning
+            more about <span> software engineering</span>. I am a person who
+            focuses on learning about new things. Anyway i'm Web Progammer
+            especially <span> Frontend Developer</span>, for Backend i'm still
+            learning on it.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a2d9ff"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="project">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <h1 class="text-center mb-5 line2">Projects</h1>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col d-flex justify-content-end">
+              <a href="https://soca.ai/" class="text-decoration-none">
+                <vs-card>
+                  <template #title>
+                    <h3>Soca AI</h3>
+                  </template>
+                  <template #img>
+                    <img src="@/assets/img/soca-ai.svg" alt="socaai" />
+                  </template>
+                  <template #text>
+                    <p>Soca AI website it's Made by Me !</p>
+                  </template>
+                </vs-card>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://birutekno.com/" class="text-decoration-none">
+                <vs-card>
+                  <template #title>
+                    <h3>Birutekno Website</h3>
+                  </template>
+                  <template #img>
+                    <img src="@/assets/img/birtek.svg" alt="birutekno" />
+                  </template>
+                  <template #text>
+                    <p>Birutekno Website it's Made by Me !</p>
+                  </template>
+                </vs-card>
+              </a>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col d-flex justify-content-end">
+              <a href="#" class="text-decoration-none">
+                <vs-card>
+                  <template #title>
+                    <h3>Marque NLP</h3>
+                  </template>
+                  <template #img>
+                    <img src="@/assets/img/nlp.png" alt="nlp" />
+                  </template>
+                  <template #text>
+                    <p>I'm part of NLP Marque frontend Team</p>
+                  </template>
+                </vs-card>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <vs-card>
+                  <template #title>
+                    <h3>VROS Admin</h3>
+                  </template>
+                  <template #img>
+                    <img src="@/assets/img/vros.png" alt="vros" />
+                  </template>
+                  <template #text>
+                    <p>I'm part of VROS Admin Website Team</p>
+                  </template>
+                </vs-card>
+              </a>
+            </div>
+          </div>
+          <a href="#" class="text-decoration-none"
+            ><p class="m-0 text-center mt-4 fw-bold">And many more</p></a
+          >
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a2d9ff"
+          fill-opacity="1"
+          d="M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,250.7C672,245,768,203,864,186.7C960,171,1056,181,1152,208C1248,235,1344,277,1392,298.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="skill">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <h1 class="text-center mt-5 mb-5 line3">My Skills</h1>
+          </div>
+          <div class="mb-3">
+            <h2 class="line3">Using now :</h2>
+          </div>
+          <div class="row justify-content-center align-items-center mt-5">
+            <div
+              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
+            >
+              <vs-tooltip left>
+                <img
+                  src="https://www.php.net/images/logos/new-php-logo.png"
+                  alt="php"
+                  class="logo-php"
+                />
+                <template #tooltip> PHP </template>
+              </vs-tooltip>
+            </div>
+            <div
+              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
+            >
+              <vs-tooltip>
+                <img
+                  src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+                  alt="git"
+                  class="logo-git"
+                />
+                <template #tooltip> Git </template>
+              </vs-tooltip>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center animasi mb-lg-0">
+              <vs-tooltip right>
+                <img
+                  src="@/assets/img/javascript-logo.png"
+                  alt="javascript"
+                  class="logo-js"
+                />
+                <template #tooltip> JavaScript </template>
+              </vs-tooltip>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center mt-5 mb-5">
+            <div
+              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
+            >
+              <vs-tooltip left>
+                <img
+                  src="@/assets/img/bootstrap.png"
+                  alt="bootsrap"
+                  class="logo-boot"
+                />
+                <template #tooltip> Bootstrap </template>
+              </vs-tooltip>
+            </div>
+            <div
+              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
+            >
+              <vs-tooltip>
+                <img
+                  src="@/assets/img/html-css-logo.png"
+                  alt="html&css"
+                  class="logo-html"
+                />
+                <template #tooltip> HTML & CSS </template>
+              </vs-tooltip>
+            </div>
+            <div
+              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-3"
+            >
+              <vs-tooltip right>
+                <img src="@/assets/img/vue.png" alt="vue" class="logo-vue" />
+                <template #tooltip> Vue JS </template>
+              </vs-tooltip>
+            </div>
+          </div>
+          <div class="mb-3">
+            <h2 class="line3">Learning :</h2>
+          </div>
+          <div class="row justify-content-center align-items-center mt-5">
+            <div class="col d-flex justify-content-center animasi mb-lg-0 mb-5">
+              <vs-tooltip left>
+                <img
+                  src="@/assets/img/laravel.png"
+                  alt="laravel"
+                  class="logo-laravel"
+                />
+                <template #tooltip> Laravel </template>
+              </vs-tooltip>
+            </div>
+            <div
+              class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
+            >
+              <vs-tooltip>
+                <img
+                  src="@/assets/img/react.png"
+                  alt="react"
+                  class="logo-react"
+                />
+                <template #tooltip> React JS </template>
+              </vs-tooltip>
+            </div>
+            <div
+              class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
+            >
+              <vs-tooltip>
+                <img
+                  src="@/assets/img/postgre.png"
+                  alt="react"
+                  class="logo-react"
+                />
+                <template #tooltip> PostgreSQL </template>
+              </vs-tooltip>
+            </div>
+            <div
+              class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-4"
+            >
+              <vs-tooltip right>
+                <img src="@/assets/img/java.png" alt="java" class="logo-size" />
+                <template #tooltip> Java </template>
+              </vs-tooltip>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#a2d9ff"
+        fill-opacity="1"
+        d="M0,96L48,85.3C96,75,192,53,288,58.7C384,64,480,96,576,112C672,128,768,128,864,112C960,96,1056,64,1152,64C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+    <div class="contact">
+      <section id="contact">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="Name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Message</label>
+                  <textarea class="form-control" id="pesan" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-black text-center pb-5 mt-5">
+        <p>
+          Created with <b-icon icon="heart-fill" variant="danger"></b-icon> By
+          <a
+            href="https://www.instagram.com/tegar.ua/"
+            class="text-black fw-bold"
+            >Tegar Umar Abdillah</a
+          >
+        </p>
+      </footer>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  setup() {},
+  data: () => ({
+    active: false,
+    input1: "",
+    input2: "",
+    checkbox1: false,
+  }),
+};
+</script>
+<style scoped>
+.responsive {
+  display: inline;
+}
+.contact {
+  background: #a2d9ff;
+}
+.welcome {
+  background: #48cae4;
+}
+.project {
+  background: #a2d9ff;
+}
+.profile {
+  width: 300px;
+  height: 300px;
+}
+.line {
+  display: inline-block;
+  padding-bottom: 5px;
+  background: linear-gradient(to left, #0bbdfb, #0bbdfb);
+  background-size: 100% 2px;
+  background-position: bottom 0 left 0, bottom 5px left 0;
+  background-repeat: no-repeat;
+}
+.line2 {
+  display: inline-block;
+  padding-bottom: 12px;
+  background: linear-gradient(to left, #fff, #fff);
+  background-size: 100% 3px;
+  background-position: bottom 0 left 0, bottom 5px left 0;
+  background-repeat: no-repeat;
+}
+.line3 {
+  display: inline-block;
+  padding-bottom: 12px;
+  background: linear-gradient(to left, #0bbdfb, #0bbdfb);
+  background-size: 100% 3px;
+  background-position: bottom 0 left 0, bottom 5px left 0;
+  background-repeat: no-repeat;
+}
+.logo-size {
+  width: 120px;
+  height: 150px;
+}
+.logo-git {
+  width: 150px;
+  height: 150px;
+}
+.logo-js {
+  width: 150px;
+  height: 150px;
+}
+.logo-boot {
+  width: 150px;
+  height: 130px;
+}
+.logo-html {
+  height: 150px;
+  width: 250px;
+}
+.logo-laravel {
+  width: 150px;
+  height: 150px;
+}
+.logo-react {
+  height: 150px;
+  width: 150px;
+}
+.logo-vue {
+  height: 140px;
+  width: 150px;
+}
+.animasi:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+.home-konten h1 {
+  font-size: 50px;
+}
+.home-konten .sub {
+  color: #555;
+  line-height: 22px;
+}
+span {
+  color: orange;
+}
+.not-margin {
+  margin: 0px;
+  font-weight: normal;
+  padding: 10px;
+}
+.con-form {
+  width: 100%;
+}
+.con-form .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.con-form .flex a {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.con-form .flex a:hover {
+  opacity: 1;
+}
+.con-form .vs-checkbox-label {
+  font-size: 0.8rem;
+}
+.con-form .vs-input-content {
+  margin: 10px 0px;
+  width: calc(100%);
+}
+.con-form .vs-input-content .vs-input {
+  width: 100%;
+}
+.footer-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100%);
+}
+.footer-dialog .new {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 0.7rem;
+}
+.footer-dialog .new a {
+  color: rgba(var(--vs-primary), 1) !important;
+  margin-left: 6px;
+}
+.footer-dialog .new a:hover {
+  text-decoration: underline;
+}
+.footer-dialog .vs-button {
+  margin: 0px;
+}
+@media only screen and (max-width: 600px) {
+  .home-img {
+    display: none;
+  }
+  .responsive {
+    display: none;
+  }
+  .home-konten h2 {
+    font-size: 20px !important;
+  }
+  .home-konten h1 {
+    font-size: 24px !important;
+  }
+  .home-konten p {
+    font-size: 12px !important;
+  }
+  #about .caption {
+    font-size: 14px !important;
+  }
+  #about .job {
+    font-size: 18px !important;
+  }
+  #about h1 {
+    font-size: 24px !important;
+  }
+  .project h3 {
+    font-size: 14px !important;
+  }
+  .project p {
+    font-size: 12px !important;
+  }
+  .project h1 {
+    font-size: 24px !important;
+  }
+  .skill h1 {
+    font-size: 24px !important;
+  }
+  .skill h2 {
+    font-size: 20px !important;
+  }
+  .logo-size {
+    width: 90px !important;
+    height: 120px !important;
+  }
+  .logo-git {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-js {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-boot {
+    width: 100px;
+    height: 80px;
+  }
+  .logo-html {
+    height: 100px;
+    width: 200px;
+  }
+  .logo-laravel {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-react {
+    height: 100px;
+    width: 100px;
+  }
+  .logo-vue {
+    height: 90px;
+    width: 100px;
+  }
+  .logo-php {
+    height: 75px;
+  }
+}
+</style>
