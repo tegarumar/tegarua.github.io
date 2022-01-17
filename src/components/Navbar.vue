@@ -2,10 +2,10 @@
   <div class="center examplex">
     <vs-navbar center-collapsed v-model="active" class="fixed-top">
       <template #left>
-        <img src="@/assets/img/tegar.png" alt="Tegar" class="tegar-logo" />
+        <img src="@/assets/img/tegar.svg" alt="Tegar" class="tegar-logo" />
       </template>
       <a href="#home" class="text-decoration-none">
-        <vs-navbar-item :active="active == 'home'" id="home" class="text-black">
+        <vs-navbar-item :active="active == 'home'" id="home" class="text-pink">
           Home
         </vs-navbar-item>
       </a>
@@ -14,7 +14,7 @@
         <vs-navbar-item
           :active="active == 'about'"
           id="about"
-          class="text-black"
+          class="text-pink"
         >
           About
         </vs-navbar-item>
@@ -23,7 +23,7 @@
         <vs-navbar-item
           :active="active == 'project'"
           id="project"
-          class="text-black"
+          class="text-pink"
         >
           Project
         </vs-navbar-item>
@@ -32,7 +32,7 @@
         <vs-navbar-item
           :active="active == 'contact'"
           id="contact"
-          class="text-black"
+          class="text-pink"
         >
           Contact Me
         </vs-navbar-item>
@@ -57,6 +57,9 @@ export default {
 };
 </script>
 <style scoped>
+.text-pink {
+  color: #fa34af;
+}
 .con-image {
   border-radius: inherit;
 }
