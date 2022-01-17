@@ -15,7 +15,7 @@ Vue.use(Vuesax, {
   // options here
   colors: {
     primary:'#0275d8',
-    success:'rgb(23, 201, 100)',
+    success:'#ffffff',
     danger:'rgb(242, 19, 93)',
     warning:'rgb(255, 130, 0)',
     dark:'#fa34af',

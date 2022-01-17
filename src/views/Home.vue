@@ -26,7 +26,12 @@
                   class="container d-flex justify-content-center align-items-center"
                 >
                   <div class="center">
-                    <vs-button @click="active = !active" size="large">
+                    <vs-button
+                      success
+                      class="text-pink fw-bold"
+                      @click="active = !active"
+                      size="large"
+                    >
                       Hire Me
                     </vs-button>
                     <vs-dialog v-model="active">
@@ -422,6 +427,9 @@ export default {
 }
 .contact {
   background: #fa34af;
+}
+.text-pink {
+  color: #fa34af;
 }
 .welcome {
   background: #fa34af;
