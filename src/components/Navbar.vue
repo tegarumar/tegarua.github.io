@@ -5,23 +5,35 @@
         <img src="@/assets/img/tegar.png" alt="Tegar" class="tegar-logo" />
       </template>
       <a href="#home" class="text-decoration-none">
-        <vs-navbar-item :active="active == 'home'" id="home">
+        <vs-navbar-item :active="active == 'home'" id="home" class="text-black">
           Home
         </vs-navbar-item>
       </a>
 
       <a href="#about">
-        <vs-navbar-item :active="active == 'about'" id="about">
+        <vs-navbar-item
+          :active="active == 'about'"
+          id="about"
+          class="text-black"
+        >
           About
         </vs-navbar-item>
       </a>
       <a href="#project">
-        <vs-navbar-item :active="active == 'project'" id="project">
+        <vs-navbar-item
+          :active="active == 'project'"
+          id="project"
+          class="text-black"
+        >
           Project
         </vs-navbar-item>
       </a>
       <a href="#contact">
-        <vs-navbar-item :active="active == 'contact'" id="contact">
+        <vs-navbar-item
+          :active="active == 'contact'"
+          id="contact"
+          class="text-black"
+        >
           Contact Me
         </vs-navbar-item>
       </a>

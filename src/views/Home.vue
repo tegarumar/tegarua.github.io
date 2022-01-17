@@ -8,11 +8,16 @@
               class="col-lg-7 d-flex flex-column justify-content-end align-items-center"
             >
               <div class="home-konten">
-                <h2 class="mt-5 lead fw-normal" style="font-size: 30px">
+                <h2
+                  class="mt-5 lead text-white fw-normal"
+                  style="font-size: 30px"
+                >
                   Hi, Welcome to my Page
                 </h2>
-                <h1>Anyway my name is <span>Tegar</span> !</h1>
-                <p class="sub">
+                <h1 class="text-white">
+                  Anyway my name is <span>Tegar</span> !
+                </h1>
+                <p class="sub text-white">
                   This is my official Portfolio website to showcase my all works
                   related to <br class="responsive" />
                   web development
@@ -68,7 +73,7 @@
             <div class="col-lg-5 d-flex justify-content-center align-items-end">
               <div class="home-img">
                 <img
-                  src="@/assets/img/trip.png"
+                  src="@/assets/img/man.svg"
                   class="profile mt-5"
                   alt="logo"
                 />
@@ -116,7 +121,7 @@
     <section id="project">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#a2d9ff"
+          fill="#47423d"
           fill-opacity="1"
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
@@ -124,7 +129,7 @@
       <div class="project">
         <div class="container">
           <div class="d-flex justify-content-center">
-            <h1 class="text-center mb-5 line2">Projects</h1>
+            <h1 class="text-center text-white mb-5 line2">Projects</h1>
           </div>
           <div class="row align-items-center mb-5">
             <div class="col d-flex justify-content-end">
@@ -134,7 +139,7 @@
                     <h3>Soca AI</h3>
                   </template>
                   <template #img>
-                    <img src="@/assets/img/soca-ai.svg" alt="socaai" />
+                    <img src="@/assets/img/socaai.svg" alt="socaai" />
                   </template>
                   <template #text>
                     <p>Soca AI website it's Made by Me !</p>
@@ -191,13 +196,15 @@
             </div>
           </div>
           <a href="#" class="text-decoration-none"
-            ><p class="m-0 text-center mt-4 fw-bold">And many more</p></a
+            ><p class="m-0 text-center text-white mt-4 fw-bold">
+              And many more
+            </p></a
           >
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#a2d9ff"
+          fill="#47423d"
           fill-opacity="1"
           d="M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,250.7C672,245,768,203,864,186.7C960,171,1056,181,1152,208C1248,235,1344,277,1392,298.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
         ></path>
@@ -333,7 +340,7 @@
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
-        fill="#a2d9ff"
+        fill="#47423d"
         fill-opacity="1"
         d="M0,96L48,85.3C96,75,192,53,288,58.7C384,64,480,96,576,112C672,128,768,128,864,112C960,96,1056,64,1152,64C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
       ></path>
@@ -343,15 +350,18 @@
         <div class="container">
           <div class="row text-center mb-3">
             <div class="col">
-              <h2>Contact Me</h2>
+              <h2 class="text-white">Contact Me</h2>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="col-md-6">
               <form>
                 <div class="mb-3">
-                  <label for="Name" class="form-label">Full Name</label>
+                  <label for="Name" class="form-label text-white"
+                    >Full Name</label
+                  >
                   <input
+                    autocomplete="off"
                     type="text"
                     class="form-control"
                     id="name"
@@ -359,8 +369,9 @@
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
+                  <label for="email" class="form-label text-white">Email</label>
                   <input
+                    autocomplete="off"
                     type="email"
                     class="form-control"
                     id="email"
@@ -368,21 +379,25 @@
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="pesan" class="form-label">Message</label>
+                  <label for="pesan" class="form-label text-white"
+                    >Message</label
+                  >
                   <textarea class="form-control" id="pesan" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <vs-button size="large" type="submit" class=""
+                  >Submit</vs-button
+                >
               </form>
             </div>
           </div>
         </div>
       </section>
       <footer class="text-black text-center pb-5 mt-5">
-        <p>
+        <p class="text-white">
           Created with <b-icon icon="heart-fill" variant="danger"></b-icon> By
           <a
             href="https://www.instagram.com/tegar.ua/"
-            class="text-black fw-bold"
+            class="text-white fw-bold"
             >Tegar Umar Abdillah</a
           >
         </p>
@@ -406,13 +421,13 @@ export default {
   display: inline;
 }
 .contact {
-  background: #a2d9ff;
+  background: #47423d;
 }
 .welcome {
-  background: #48cae4;
+  background: #1a1918;
 }
 .project {
-  background: #a2d9ff;
+  background: #47423d;
 }
 .profile {
   width: 300px;
@@ -437,7 +452,7 @@ export default {
 .line3 {
   display: inline-block;
   padding-bottom: 12px;
-  background: linear-gradient(to left, #0bbdfb, #0bbdfb);
+  background: linear-gradient(to left, #47423d, #47423d);
   background-size: 100% 3px;
   background-position: bottom 0 left 0, bottom 5px left 0;
   background-repeat: no-repeat;
@@ -540,6 +555,12 @@ span {
 }
 .footer-dialog .vs-button {
   margin: 0px;
+}
+.form-control:focus {
+  border-color: white;
+  background-color: var(--input-background-color);
+  color: white;
+  box-shadow: 0 0 0 0.1rem #0275d8;
 }
 @media only screen and (max-width: 600px) {
   .home-img {
