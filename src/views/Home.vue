@@ -36,7 +36,9 @@
                     </vs-button>
                     <vs-dialog v-model="active">
                       <template #header>
-                        <h4 class="not-margin">Get my <b>Contact</b></h4>
+                        <h4 class="not-margin">
+                          Get my <b class="text-pink">Contact</b>
+                        </h4>
                       </template>
                       <div class="con-content">
                         <div class="container">
