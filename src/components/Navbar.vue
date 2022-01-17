@@ -38,7 +38,7 @@
         </vs-navbar-item>
       </a>
       <template #right>
-        <vs-button @click="aktiv = !aktiv">See My CV</vs-button>
+        <vs-button dark @click="aktiv = !aktiv">See My CV</vs-button>
         <vs-dialog not-close auto-width not-padding v-model="aktiv">
           <div class="con-image">
             <img src="@/assets/img/cv-tegar.jpg" alt="" />
