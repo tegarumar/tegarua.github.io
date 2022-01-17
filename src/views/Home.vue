@@ -391,7 +391,7 @@
                   >
                   <textarea class="form-control" id="pesan" rows="3"></textarea>
                 </div>
-                <vs-button size="large" type="submit" class=""
+                <vs-button success size="large" type="submit" class="text-pink"
                   >Submit</vs-button
                 >
               </form>
