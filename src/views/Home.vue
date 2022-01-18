@@ -281,7 +281,7 @@
             <div
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
-              <vs-tooltip left>
+              <vs-tooltip left dark>
                 <vs-button
                   flat
                   success
@@ -300,7 +300,7 @@
             <div
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
-              <vs-tooltip>
+              <vs-tooltip dark>
                 <vs-button
                   success
                   @click="gitNotification('bottom-center', 'dark')"
@@ -315,7 +315,7 @@
               </vs-tooltip>
             </div>
             <div class="col-lg-4 d-flex justify-content-center animasi mb-lg-0">
-              <vs-tooltip right>
+              <vs-tooltip right dark>
                 <vs-button
                   flat
                   success
@@ -338,7 +338,7 @@
             <div
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
-              <vs-tooltip left>
+              <vs-tooltip left dark>
                 <vs-button
                   success
                   @click="bootstrapNotification('bottom-center', 'dark')"
@@ -355,7 +355,7 @@
             <div
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
-              <vs-tooltip>
+              <vs-tooltip dark>
                 <vs-button
                   flat
                   success
@@ -373,7 +373,7 @@
             <div
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-3"
             >
-              <vs-tooltip right>
+              <vs-tooltip right dark>
                 <vs-button
                   success
                   @click="vueNotification('bottom-center', 'dark')"
@@ -392,7 +392,7 @@
             data-aos="fade-up"
           >
             <div class="col d-flex justify-content-center animasi mb-lg-0 mb-5">
-              <vs-tooltip left>
+              <vs-tooltip left dark>
                 <vs-button
                   success
                   @click="laravelNotification('bottom-center', 'dark')"
@@ -409,7 +409,7 @@
             <div
               class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
-              <vs-tooltip>
+              <vs-tooltip dark>
                 <vs-button
                   flat
                   success
@@ -427,7 +427,7 @@
             <div
               class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
-              <vs-tooltip>
+              <vs-tooltip dark>
                 <vs-button
                   success
                   @click="postgreNotification('bottom-center', 'dark')"
@@ -444,7 +444,7 @@
             <div
               class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-4"
             >
-              <vs-tooltip right>
+              <vs-tooltip right dark>
                 <vs-button
                   success
                   flat
