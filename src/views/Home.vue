@@ -3,7 +3,7 @@
     <section id="home">
       <div class="welcome">
         <div class="container mt-5 mb-5 text-center">
-          <div class="row">
+          <div class="row flex-lg-row flex-column-reverse bd-highlight">
             <div
               class="col-lg-7 d-flex flex-column justify-content-end align-items-center"
             >
@@ -44,7 +44,15 @@
                         <div class="container">
                           <div class="row">
                             <div class="col-12 d-flex align-items-center mb-3">
-                              <img src="@/assets/img/inbox.svg" alt="email" />
+                              <vs-button
+                                href="mailto:tegarumarabdillah@gmail.com"
+                                icon
+                                target="_blank"
+                                color="google-plus"
+                              >
+                                <i class="bx bxl-google-plus"></i>
+                              </vs-button>
+
                               <a
                                 target="_blank"
                                 href="mailto:tegarumarabdillah@gmail.com"
@@ -54,10 +62,14 @@
                               </a>
                             </div>
                             <div class="col-12 d-flex align-items-center mb-3">
-                              <img
-                                src="@/assets/img/instagram.svg"
-                                alt="instagram"
-                              />
+                              <vs-button
+                                href="https://www.instagram.com/tegar.ua/"
+                                blank
+                                icon
+                                color="#8a3ab9"
+                              >
+                                <i class="bx bxl-instagram"></i>
+                              </vs-button>
                               <a
                                 target="_blank"
                                 href="https://www.instagram.com/tegar.ua/"
@@ -68,10 +80,14 @@
                           </div>
                           <div class="row">
                             <div class="col-12 d-flex align-items-center mb-3">
-                              <img
-                                src="@/assets/img/linkedin.svg"
-                                alt="linkedin"
-                              />
+                              <vs-button
+                                icon
+                                blank
+                                href="https://www.linkedin.com/in/tegar-umar-abdillah-b2b02b219/"
+                                color="linkedin"
+                              >
+                                <i class="bx bxl-linkedin"></i>
+                              </vs-button>
                               <a
                                 target="_blank"
                                 href="https://www.linkedin.com/in/tegar-umar-abdillah-b2b02b219/"
@@ -80,7 +96,14 @@
                               >
                             </div>
                             <div class="col-12 d-flex align-items-center mb-3">
-                              <img src="@/assets/img/github.svg" alt="github" />
+                              <vs-button
+                                icon
+                                color="#000000"
+                                href="https://github.com/tegarumar"
+                                blank
+                              >
+                                <i class="bx bxl-github"></i>
+                              </vs-button>
                               <a
                                 target="_blank"
                                 href="https://github.com/tegarumar"
@@ -117,7 +140,11 @@
       </div>
     </section>
     <section id="about">
-      <div class="container">
+      <div
+        class="container about-animasi"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <div class="mt-5 mb-4 text-center">
           <div class="container">
             <h1 class="mb-4">About <span> me </span></h1>
@@ -131,7 +158,11 @@
         </div>
       </div>
 
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <div class="line">
           <p class="lead text-lg-center caption">
             Hi, my name is Tegar Umar Abdillah. I have an interest in
@@ -243,16 +274,26 @@
           <div class="mb-3">
             <h2 class="line3">Using now :</h2>
           </div>
-          <div class="row justify-content-center align-items-center mt-5">
+          <div
+            class="row justify-content-center align-items-center mt-5"
+            data-aos="fade-up"
+          >
             <div
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
               <vs-tooltip left>
-                <img
-                  src="https://www.php.net/images/logos/new-php-logo.png"
-                  alt="php"
-                  class="logo-php"
-                />
+                <vs-button
+                  flat
+                  success
+                  @click="phpNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="https://www.php.net/images/logos/new-php-logo.png"
+                    alt="php"
+                    class="logo-php"
+                  />
+                </vs-button>
+
                 <template #tooltip> PHP </template>
               </vs-tooltip>
             </div>
@@ -260,35 +301,54 @@
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
               <vs-tooltip>
-                <img
-                  src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-                  alt="git"
-                  class="logo-git"
-                />
+                <vs-button
+                  success
+                  @click="gitNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+                    alt="git"
+                    class="logo-git"
+                  />
+                </vs-button>
                 <template #tooltip> Git </template>
               </vs-tooltip>
             </div>
             <div class="col-lg-4 d-flex justify-content-center animasi mb-lg-0">
               <vs-tooltip right>
-                <img
-                  src="@/assets/img/javascript-logo.png"
-                  alt="javascript"
-                  class="logo-js"
-                />
+                <vs-button
+                  flat
+                  success
+                  @click="jsNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/javascript-logo.png"
+                    alt="javascript"
+                    class="logo-js"
+                  />
+                </vs-button>
                 <template #tooltip> JavaScript </template>
               </vs-tooltip>
             </div>
           </div>
-          <div class="row justify-content-center align-items-center mt-5 mb-5">
+          <div
+            class="row justify-content-center align-items-center mt-5 mb-5"
+            data-aos="fade-up"
+          >
             <div
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
               <vs-tooltip left>
-                <img
-                  src="@/assets/img/bootstrap.png"
-                  alt="bootsrap"
-                  class="logo-boot"
-                />
+                <vs-button
+                  success
+                  @click="bootstrapNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/bootstrap.png"
+                    alt="bootsrap"
+                    class="logo-boot"
+                  />
+                </vs-button>
                 <template #tooltip> Bootstrap </template>
               </vs-tooltip>
             </div>
@@ -296,11 +356,17 @@
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
               <vs-tooltip>
-                <img
-                  src="@/assets/img/html-css-logo.png"
-                  alt="html&css"
-                  class="logo-html"
-                />
+                <vs-button
+                  flat
+                  success
+                  @click="htmlcssNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/html-css-logo.png"
+                    alt="html&css"
+                    class="logo-html"
+                  />
+                </vs-button>
                 <template #tooltip> HTML & CSS </template>
               </vs-tooltip>
             </div>
@@ -308,7 +374,12 @@
               class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-3"
             >
               <vs-tooltip right>
-                <img src="@/assets/img/vue.png" alt="vue" class="logo-vue" />
+                <vs-button
+                  success
+                  @click="vueNotification('bottom-center', 'dark')"
+                >
+                  <img src="@/assets/img/vue.png" alt="vue" class="logo-vue" />
+                </vs-button>
                 <template #tooltip> Vue JS </template>
               </vs-tooltip>
             </div>
@@ -316,14 +387,22 @@
           <div class="mb-3">
             <h2 class="line3">Learning :</h2>
           </div>
-          <div class="row justify-content-center align-items-center mt-5">
+          <div
+            class="row justify-content-center align-items-center mt-5"
+            data-aos="fade-up"
+          >
             <div class="col d-flex justify-content-center animasi mb-lg-0 mb-5">
               <vs-tooltip left>
-                <img
-                  src="@/assets/img/laravel.png"
-                  alt="laravel"
-                  class="logo-laravel"
-                />
+                <vs-button
+                  success
+                  @click="laravelNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/laravel.png"
+                    alt="laravel"
+                    class="logo-laravel"
+                  />
+                </vs-button>
                 <template #tooltip> Laravel </template>
               </vs-tooltip>
             </div>
@@ -331,11 +410,17 @@
               class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
               <vs-tooltip>
-                <img
-                  src="@/assets/img/react.png"
-                  alt="react"
-                  class="logo-react"
-                />
+                <vs-button
+                  flat
+                  success
+                  @click="reactNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/react.png"
+                    alt="react"
+                    class="logo-react"
+                  />
+                </vs-button>
                 <template #tooltip> React JS </template>
               </vs-tooltip>
             </div>
@@ -343,11 +428,16 @@
               class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
             >
               <vs-tooltip>
-                <img
-                  src="@/assets/img/postgre.png"
-                  alt="react"
-                  class="logo-react"
-                />
+                <vs-button
+                  success
+                  @click="postgreNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/postgre.png"
+                    alt="react"
+                    class="logo-react"
+                  />
+                </vs-button>
                 <template #tooltip> PostgreSQL </template>
               </vs-tooltip>
             </div>
@@ -355,7 +445,18 @@
               class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-4"
             >
               <vs-tooltip right>
-                <img src="@/assets/img/java.png" alt="java" class="logo-size" />
+                <vs-button
+                  success
+                  flat
+                  icon
+                  @click="javaNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/java.png"
+                    alt="java"
+                    class="logo-size"
+                  />
+                </vs-button>
                 <template #tooltip> Java </template>
               </vs-tooltip>
             </div>
@@ -441,6 +542,103 @@ export default {
     input2: "",
     checkbox1: false,
   }),
+  methods: {
+    phpNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        flat: true,
+        position,
+        title: "PHP: Hypertext Preprocessor",
+        text: `bahasa skrip dengan fungsi umum yang terutama digunakan untuk pengembangan web. Bahasa ini awalnya dibuat oleh pemrogram Denmark-Kanada Rasmus Lerdorf pada tahun 1994.`,
+      });
+    },
+    gitNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        position,
+        title: "Git",
+        text: `Git adalah perangkat lunak pengendali versi atau proyek manajemen kode perangkat lunak yang diciptakan oleh Linus Torvalds, yang pada awalnya ditujukan untuk pengembangan kernel Linux. Desain Git terinspirasi oleh BitKeeper dan Monotone.`,
+      });
+    },
+    jsNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        flat: true,
+        color,
+        position,
+        title: "JavaScript",
+        text: `avaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag SCRIPT.`,
+      });
+    },
+    bootstrapNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        position,
+        title: "Bootstrap",
+        text: `Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML dan CSS untuk tipografi, formulir, tombol, navigasi, dan komponen antarmuka lainnya, serta juga ekstensi opsional JavaScript.`,
+      });
+    },
+    htmlcssNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        position,
+        flat: true,
+        title: "HTML & CSS",
+        text: `Hypertext Markup Language adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets dan bahasa scripting seperti JavaScript dan VBScript. Cascading Style Sheet merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemograman.`,
+      });
+    },
+    vueNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        position,
+        title: "Vue.js",
+        text: `Vue.js adalah kerangka kerja JavaScript yang bersifat progresif, bersumber terbuka untuk membangun antarmuka pengguna. Integrasi ke dalam proyek yang menggunakan pustaka JavaScript lainnya mudah dilakukan dengan Vue karena ia dirancang untuk bisa berjalan hanya di beberapa bagian halaman web.`,
+      });
+    },
+    laravelNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        position,
+        title: "Laravel",
+        text: `Laravel adalah kerangka kerja aplikasi web berbasis PHP yang sumber terbuka, menggunakan konsep Model-View-Controller. Laravel berada dibawah lisensi MIT, dengan menggunakan GitHub sebagai tempat berbagi kode. `,
+      });
+    },
+    reactNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        flat: true,
+        position,
+        title: "React",
+        text: `React adalah pustaka JavaScript front-end sumber terbuka dan gratis untuk membangun antarmuka pengguna berdasarkan komponen UI. Itu dikelola oleh Meta dan komunitas pengembang individu dan perusahaan. React dapat digunakan sebagai basis dalam pengembangan aplikasi satu halaman atau mobile.`,
+      });
+    },
+    postgreNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        position,
+        title: "PostgreSQL",
+        text: `PostgreSQL adalah sebuah sistem basis data yang disebarluaskan secara bebas menurut Perjanjian lisensi BSD. Peranti lunak ini merupakan salah satu basis data yang paling banyak digunakan saat ini, selain MySQL dan Oracle. PostgreSQL menyediakan fitur yang berguna untuk replikasi basis data.`,
+      });
+    },
+    javaNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        flat: true,
+        position,
+        title: "Java",
+        text: `Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995.`,
+      });
+    },
+  },
 };
 </script>
 <style scoped>
@@ -591,6 +789,8 @@ span {
   background-color: var(--input-background-color);
   color: white;
   box-shadow: 0 0 0 0.1rem #0275d8;
+}
+.about-animasi {
 }
 @media only screen and (max-width: 600px) {
   .home-img {

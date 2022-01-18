@@ -6,12 +6,13 @@ import router from './router';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'boxicons/css/boxicons.min.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
-
+AOS.init();
 Vue.use(Vuesax, {
   // options here
   colors: {

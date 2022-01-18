@@ -48,20 +48,23 @@
             </template>
 
             <div class="con-form">
-              <vs-input
-                v-model="input1"
-                placeholder="Email"
-                class="mb-2"
-                style="width: 100%"
-              >
-                <template #icon> @ </template>
+              <vs-input v-model="input1" placeholder="Email" class="mb-2">
+                <template #icon><i class="bx bx-user"></i></template>
               </vs-input>
-
-              <vs-input type="password" v-model="input2" placeholder="Password">
-                <template #icon>
-                  <i class="bx bxs-lock"></i>
-                </template>
-              </vs-input>
+              <div class="center content-inputs">
+                <vs-input
+                  type="password"
+                  v-model="value"
+                  placeholder="Password"
+                  :visiblePassword="hasVisiblePassword"
+                  @click-icon="hasVisiblePassword = !hasVisiblePassword"
+                >
+                  <template #icon>
+                    <i v-if="!hasVisiblePassword" class="bx bx-show-alt"></i>
+                    <i v-else class="bx bx-hide"></i>
+                  </template>
+                </vs-input>
+              </div>
               <div class="flex">
                 <vs-checkbox v-model="checkbox1">Remember me</vs-checkbox>
                 <a href="#">Forgot Password?</a>
@@ -70,7 +73,7 @@
 
             <template #footer>
               <div class="footer-dialog">
-                <vs-button block> Sign In </vs-button>
+                <vs-button dark block> Sign In </vs-button>
 
                 <div class="new">This login form it's just an example</div>
               </div>
@@ -97,7 +100,46 @@ export default {
     input1: "",
     input2: "",
     checkbox1: false,
+    value: "",
+    hasVisiblePassword: false,
   }),
+  computed: {
+    getProgress() {
+      let progress = 0;
+
+      // at least one number
+
+      if (/\d/.test(this.value)) {
+        progress += 20;
+      }
+
+      // at least one capital letter
+
+      if (/(.*[A-Z].*)/.test(this.value)) {
+        progress += 20;
+      }
+
+      // at menons a lowercase
+
+      if (/(.*[a-z].*)/.test(this.value)) {
+        progress += 20;
+      }
+
+      // more than 5 digits
+
+      if (this.value.length >= 6) {
+        progress += 20;
+      }
+
+      // at least one special character
+
+      if (/[^A-Za-z0-9]/.test(this.value)) {
+        progress += 20;
+      }
+
+      return progress;
+    },
+  },
 };
 </script>
 <style scoped>
