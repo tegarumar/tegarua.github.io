@@ -45,16 +45,25 @@
                           <div class="row">
                             <div class="col-12 d-flex align-items-center mb-3">
                               <img src="@/assets/img/inbox.svg" alt="email" />
-                              <p class="ms-2 m-0">
+                              <a
+                                target="_blank"
+                                href="mailto:tegarumarabdillah@gmail.com"
+                                class="ms-2 m-0 text-decoration-none"
+                              >
                                 tegarumarabdillah@gmail.com
-                              </p>
+                              </a>
                             </div>
                             <div class="col-12 d-flex align-items-center mb-3">
                               <img
                                 src="@/assets/img/instagram.svg"
                                 alt="instagram"
                               />
-                              <p class="ms-2 m-0">@tegar.ua</p>
+                              <a
+                                target="_blank"
+                                href="https://www.instagram.com/tegar.ua/"
+                                class="ms-2 m-0 text-decoration-none"
+                                >@tegar.ua</a
+                              >
                             </div>
                           </div>
                           <div class="row">
@@ -63,11 +72,21 @@
                                 src="@/assets/img/linkedin.svg"
                                 alt="linkedin"
                               />
-                              <p class="ms-2 m-0">Tegar Umar Abdillah</p>
+                              <a
+                                target="_blank"
+                                href="https://www.linkedin.com/in/tegar-umar-abdillah-b2b02b219/"
+                                class="ms-2 m-0 text-decoration-none"
+                                >Tegar Umar Abdillah</a
+                              >
                             </div>
                             <div class="col-12 d-flex align-items-center mb-3">
                               <img src="@/assets/img/github.svg" alt="github" />
-                              <p class="ms-2 m-0">TegarUA</p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/tegarumar"
+                                class="ms-2 m-0 text-decoration-none"
+                                >tegarumar</a
+                              >
                             </div>
                           </div>
                         </div>
@@ -403,6 +422,7 @@
         <p class="text-white">
           Created with <b-icon icon="heart-fill" variant="danger"></b-icon> By
           <a
+            target="_blank"
             href="https://www.instagram.com/tegar.ua/"
             class="text-white fw-bold"
             >Tegar Umar Abdillah</a
@@ -446,7 +466,7 @@ export default {
 .line {
   display: inline-block;
   padding-bottom: 5px;
-  background: linear-gradient(to left, #0bbdfb, #0bbdfb);
+  background: linear-gradient(to left, #fa34af, #fa34af);
   background-size: 100% 2px;
   background-position: bottom 0 left 0, bottom 5px left 0;
   background-repeat: no-repeat;
@@ -462,7 +482,7 @@ export default {
 .line3 {
   display: inline-block;
   padding-bottom: 12px;
-  background: linear-gradient(to left, #47423d, #47423d);
+  background: linear-gradient(to left, #ffa8de, #ffa8de);
   background-size: 100% 3px;
   background-position: bottom 0 left 0, bottom 5px left 0;
   background-repeat: no-repeat;
