@@ -4,6 +4,7 @@ import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' 
 import router from './router';
 import 'bootstrap/dist/css/bootstrap.css'
+import 'boxicons/css/boxicons.min.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 
