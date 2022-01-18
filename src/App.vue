@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Navbar />
+    <template v-if="$route.name != 'Page404'">
+      <Navbar />
+    </template>
     <router-view />
   </div>
 </template>

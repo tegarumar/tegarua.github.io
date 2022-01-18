@@ -48,7 +48,7 @@
             </template>
 
             <div class="con-form">
-              <vs-input v-model="input1" placeholder="Email" class="mb-2">
+              <vs-input v-model="input1" placeholder="Username" class="mb-2">
                 <template #icon><i class="bx bx-user"></i></template>
               </vs-input>
               <div class="center content-inputs">

@@ -189,8 +189,12 @@
             <h1 class="text-center text-white mb-5 line2">Projects</h1>
           </div>
           <div class="row align-items-center mb-5">
-            <div class="col d-flex justify-content-end">
-              <a href="https://soca.ai/" class="text-decoration-none">
+            <div class="col-lg-4 d-flex justify-content-start">
+              <a
+                href="https://soca.ai/"
+                class="text-decoration-none"
+                target="_blank"
+              >
                 <vs-card>
                   <template #title>
                     <h3>Soca AI</h3>
@@ -204,8 +208,27 @@
                 </vs-card>
               </a>
             </div>
-            <div class="col">
-              <a href="https://birutekno.com/" class="text-decoration-none">
+            <div class="col d-flex align-items-start flex-column">
+              <div class="mb-2 d-flex">
+                <img src="@/assets/img/soca-text.svg" alt="" class="" />
+                <h4 class="m-0 ms-2 text-white">Website</h4>
+              </div>
+              <p class="text-white">
+                "Soca AI is an artificial intelligence platform with a specific
+                use case that ready to use. Focus on computer vision for Facial
+                Recognition, Object Detection, Product Counting, Quality
+                Inspection, Proctoring Exam and many other services. Our current
+                product is Soca Rupa & Soca Ganita."
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-4">
+              <a
+                href="https://birutekno.com/"
+                class="text-decoration-none"
+                target="_blank"
+              >
                 <vs-card>
                   <template #title>
                     <h3>Birutekno Website</h3>
@@ -219,9 +242,27 @@
                 </vs-card>
               </a>
             </div>
+            <div class="col d-flex align-items-start flex-column">
+              <div class="d-flex justify-content-center mb-2">
+                <img
+                  src="@/assets/img/biru-logo.svg"
+                  alt=""
+                  class="biru-logo"
+                />
+                <div class="d-flex align-items-end ms-2">
+                  <h4 class="m-0 ms-2 text-white">Website</h4>
+                </div>
+              </div>
+              <p class="text-white">
+                "Birutekno Inc. is subsidiary of PT. Jimmy Group Technology.
+                Birutekno is a Software Development Company, based in Bandung
+                Indonesia. We provide AI Services, Web or Mobile Application,
+                Design and Digital Multimedia."
+              </p>
+            </div>
           </div>
-          <div class="row align-items-center">
-            <div class="col d-flex justify-content-end">
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-4">
               <a href="#" class="text-decoration-none">
                 <vs-card>
                   <template #title>
@@ -236,7 +277,27 @@
                 </vs-card>
               </a>
             </div>
-            <div class="col">
+            <div class="col d-flex align-items-start flex-column">
+              <div class="mb-2 d-flex">
+                <div class="d-flex align-items-end">
+                  <img
+                    src="@/assets/img/nlp-text.svg"
+                    alt=""
+                    class="nlp-text"
+                  />
+                </div>
+                <h4 class="m-0 ms-2 text-white">Dashboard</h4>
+              </div>
+              <p class="text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis molestias, quibusdam labore natus quod perferendis optio
+                ex ab ut sit, harum, rerum esse suscipit? Quasi nostrum expedita
+                repellendus corrupti neque!
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-4">
               <a href="#" class="text-decoration-none">
                 <vs-card>
                   <template #title>
@@ -251,7 +312,26 @@
                 </vs-card>
               </a>
             </div>
+            <div class="col d-flex align-items-start flex-column">
+              <div class="d-flex justify-content-center mb-2">
+                <div class="d-flex align-items-end">
+                  <img
+                    src="@/assets/img/vros-logo.png"
+                    alt=""
+                    class="biru-logo"
+                  />
+                </div>
+                <div class="d-flex align-items-center ms-2">
+                  <h4 class="m-0 ms-2 text-white">Dashboard</h4>
+                </div>
+              </div>
+              <p class="text-white">
+                "VROS (Virtual Office Solutions) is the first Indonesian Suite
+                Application. To collaboration and increasing the productivity."
+              </p>
+            </div>
           </div>
+
           <a href="#" class="text-decoration-none"
             ><p class="m-0 text-center text-white mt-4 fw-bold">
               And many more
@@ -651,6 +731,9 @@ export default {
 .text-pink {
   color: #fa34af;
 }
+.nlp-text {
+  width: 150px;
+}
 .welcome {
   background: #fa34af;
 }
@@ -791,6 +874,9 @@ span {
   box-shadow: 0 0 0 0.1rem #0275d8;
 }
 .about-animasi {
+}
+.biru-logo {
+  height: 60px;
 }
 @media only screen and (max-width: 600px) {
   .home-img {
