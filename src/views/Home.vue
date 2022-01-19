@@ -133,6 +133,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fff"
+            class="bg-white"
             fill-opacity="1"
             d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
@@ -190,145 +191,162 @@
           </div>
           <div class="row align-items-center mb-md-0 mb-5">
             <div class="col-lg-4 d-flex justify-content-start mb-4">
-              <a
-                href="https://soca.ai/"
-                class="text-decoration-none"
-                target="_blank"
-              >
-                <vs-card>
-                  <template #title>
-                    <h3>Soca AI</h3>
-                  </template>
-                  <template #img>
-                    <img src="@/assets/img/socaai.svg" alt="socaai" />
-                  </template>
-                  <template #text>
-                    <p>Soca AI website it's Made by Me !</p>
-                  </template>
-                </vs-card>
-              </a>
-            </div>
-            <div class="col d-flex align-items-start flex-column">
-              <div class="mb-2 d-flex">
-                <img src="@/assets/img/soca-text.svg" alt="" class="" />
-                <h4 class="m-0 ms-2 text-white">Website</h4>
+              <div data-aos="fade-up-right">
+                <a
+                  href="https://soca.ai/"
+                  class="text-decoration-none"
+                  target="_blank"
+                >
+                  <vs-card>
+                    <template #title>
+                      <h3>Soca AI</h3>
+                    </template>
+                    <template #img>
+                      <img src="@/assets/img/socaai.svg" alt="socaai" />
+                    </template>
+                    <template #text>
+                      <p>Soca AI website it's Made by Me !</p>
+                    </template>
+                  </vs-card>
+                </a>
               </div>
-              <p class="text-white project-text">
-                "Soca AI is an artificial intelligence platform with a specific
-                use case that ready to use. Focus on computer vision for Facial
-                Recognition, Object Detection, Product Counting, Quality
-                Inspection, Proctoring Exam and many other services. Our current
-                product is Soca Rupa & Soca Ganita."
-              </p>
-            </div>
-          </div>
-          <div class="row align-items-center mb-md-0 mb-5">
-            <div class="col-lg-4 mb-4">
-              <a
-                href="https://birutekno.com/"
-                class="text-decoration-none"
-                target="_blank"
-              >
-                <vs-card>
-                  <template #title>
-                    <h3>Birutekno Website</h3>
-                  </template>
-                  <template #img>
-                    <img src="@/assets/img/birtek.svg" alt="birutekno" />
-                  </template>
-                  <template #text>
-                    <p>Birutekno Website it's Made by Me !</p>
-                  </template>
-                </vs-card>
-              </a>
             </div>
             <div class="col d-flex align-items-start flex-column">
-              <div class="d-flex justify-content-center mb-2">
-                <img
-                  src="@/assets/img/biru-logo.svg"
-                  alt=""
-                  class="biru-logo"
-                />
-                <div class="d-flex align-items-end ms-2">
+              <div data-aos="fade-up-left">
+                <div class="mb-2 d-flex">
+                  <img src="@/assets/img/soca-text.svg" alt="" class="" />
                   <h4 class="m-0 ms-2 text-white">Website</h4>
                 </div>
+                <p class="text-white project-text">
+                  "Soca AI is an artificial intelligence platform with a
+                  specific use case that ready to use. Focus on computer vision
+                  for Facial Recognition, Object Detection, Product Counting,
+                  Quality Inspection, Proctoring Exam and many other services.
+                  Our current product is Soca Rupa & Soca Ganita."
+                </p>
               </div>
-              <p class="text-white project-text">
-                "Birutekno Inc. is subsidiary of PT. Jimmy Group Technology.
-                Birutekno is a Software Development Company, based in Bandung
-                Indonesia. We provide AI Services, Web or Mobile Application,
-                Design and Digital Multimedia."
-              </p>
             </div>
           </div>
           <div class="row align-items-center mb-md-0 mb-5">
             <div class="col-lg-4 mb-4">
-              <a href="#" class="text-decoration-none">
-                <vs-card>
-                  <template #title>
-                    <h3>Marque NLP</h3>
-                  </template>
-                  <template #img>
-                    <img src="@/assets/img/nlp.png" alt="nlp" />
-                  </template>
-                  <template #text>
-                    <p>I'm part of NLP Marque frontend Team</p>
-                  </template>
-                </vs-card>
-              </a>
-            </div>
-            <div class="col d-flex align-items-start flex-column">
-              <div class="mb-2 d-flex">
-                <div class="d-flex align-items-end">
-                  <img
-                    src="@/assets/img/nlp-text.svg"
-                    alt=""
-                    class="nlp-text"
-                  />
-                </div>
-                <h4 class="m-0 ms-2 text-white">Dashboard</h4>
+              <div data-aos="fade-up-right">
+                <a
+                  href="https://birutekno.com/"
+                  class="text-decoration-none"
+                  target="_blank"
+                >
+                  <vs-card>
+                    <template #title>
+                      <h3>Birutekno Website</h3>
+                    </template>
+                    <template #img>
+                      <img src="@/assets/img/birtek.svg" alt="birutekno" />
+                    </template>
+                    <template #text>
+                      <p>Birutekno Website it's Made by Me !</p>
+                    </template>
+                  </vs-card>
+                </a>
               </div>
-              <p class="text-white project-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis molestias, quibusdam labore natus quod perferendis optio
-                ex ab ut sit, harum, rerum esse suscipit? Quasi nostrum expedita
-                repellendus corrupti neque!
-              </p>
-            </div>
-          </div>
-          <div class="row align-items-center mb-md-0 mb-5">
-            <div class="col-lg-4 mb-4">
-              <a href="#" class="text-decoration-none">
-                <vs-card>
-                  <template #title>
-                    <h3>VROS Admin</h3>
-                  </template>
-                  <template #img>
-                    <img src="@/assets/img/vros.png" alt="vros" />
-                  </template>
-                  <template #text>
-                    <p>I'm part of VROS Admin Website Team</p>
-                  </template>
-                </vs-card>
-              </a>
             </div>
             <div class="col d-flex align-items-start flex-column">
-              <div class="d-flex justify-content-center mb-2">
-                <div class="d-flex align-items-end">
+              <div data-aos="fade-up-left">
+                <div class="d-flex justify-content-start mb-2">
                   <img
-                    src="@/assets/img/vros-logo.png"
+                    src="@/assets/img/biru-logo.svg"
                     alt=""
                     class="biru-logo"
                   />
+                  <div class="d-flex align-items-end ms-2">
+                    <h4 class="m-0 ms-2 text-white">Website</h4>
+                  </div>
                 </div>
-                <div class="d-flex align-items-center ms-2">
+                <p class="text-white project-text">
+                  "Birutekno Inc. is subsidiary of PT. Jimmy Group Technology.
+                  Birutekno is a Software Development Company, based in Bandung
+                  Indonesia. We provide AI Services, Web or Mobile Application,
+                  Design and Digital Multimedia."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center mb-md-0 mb-5">
+            <div class="col-lg-4 mb-4">
+              <div data-aos="fade-up-right">
+                <a href="#" class="text-decoration-none">
+                  <vs-card>
+                    <template #title>
+                      <h3>Marque NLP</h3>
+                    </template>
+                    <template #img>
+                      <img src="@/assets/img/nlp.png" alt="nlp" />
+                    </template>
+                    <template #text>
+                      <p>I'm part of NLP Marque frontend Team</p>
+                    </template>
+                  </vs-card>
+                </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start flex-column">
+              <div data-aos="fade-up-left">
+                <div class="mb-2 d-flex">
+                  <div class="d-flex align-items-end">
+                    <img
+                      src="@/assets/img/nlp-text.svg"
+                      alt=""
+                      class="nlp-text"
+                    />
+                  </div>
                   <h4 class="m-0 ms-2 text-white">Dashboard</h4>
                 </div>
+                <p class="text-white project-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Facilis molestias, quibusdam labore natus quod perferendis
+                  optio ex ab ut sit, harum, rerum esse suscipit? Quasi nostrum
+                  expedita repellendus corrupti neque!
+                </p>
               </div>
-              <p class="text-white project-text">
-                "VROS (Virtual Office Solutions) is the first Indonesian Suite
-                Application. To collaboration and increasing the productivity."
-              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-md-0 mb-5">
+            <div class="col-lg-4 mb-4">
+              <div data-aos="fade-up-right">
+                <a href="#" class="text-decoration-none">
+                  <vs-card>
+                    <template #title>
+                      <h3>VROS Admin</h3>
+                    </template>
+                    <template #img>
+                      <img src="@/assets/img/vros.png" alt="vros" />
+                    </template>
+                    <template #text>
+                      <p>I'm part of VROS Admin Website Team</p>
+                    </template>
+                  </vs-card>
+                </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start flex-column">
+              <div data-aos="fade-up-left">
+                <div class="d-flex justify-content-start mb-2">
+                  <div class="d-flex align-items-end">
+                    <img
+                      src="@/assets/img/vros-logo.png"
+                      alt=""
+                      class="biru-logo"
+                    />
+                  </div>
+                  <div class="d-flex align-items-center ms-2">
+                    <h4 class="m-0 ms-2 text-white">Dashboard</h4>
+                  </div>
+                </div>
+                <p class="text-white project-text">
+                  "VROS (Virtual Office Solutions) is the first Indonesian Suite
+                  Application. To collaboration and increasing the
+                  productivity."
+                </p>
+              </div>
             </div>
           </div>
 
