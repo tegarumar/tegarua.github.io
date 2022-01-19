@@ -141,7 +141,7 @@
     </section>
     <section id="about">
       <div
-        class="container about-animasi"
+        class="container about-"
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
@@ -188,8 +188,8 @@
           <div class="d-flex justify-content-center">
             <h1 class="text-center text-white mb-5 line2">Projects</h1>
           </div>
-          <div class="row align-items-center mb-5">
-            <div class="col-lg-4 d-flex justify-content-start">
+          <div class="row align-items-center mb-md-0 mb-5">
+            <div class="col-lg-4 d-flex justify-content-start mb-4">
               <a
                 href="https://soca.ai/"
                 class="text-decoration-none"
@@ -213,7 +213,7 @@
                 <img src="@/assets/img/soca-text.svg" alt="" class="" />
                 <h4 class="m-0 ms-2 text-white">Website</h4>
               </div>
-              <p class="text-white">
+              <p class="text-white project-text">
                 "Soca AI is an artificial intelligence platform with a specific
                 use case that ready to use. Focus on computer vision for Facial
                 Recognition, Object Detection, Product Counting, Quality
@@ -222,8 +222,8 @@
               </p>
             </div>
           </div>
-          <div class="row align-items-center mb-5">
-            <div class="col-lg-4">
+          <div class="row align-items-center mb-md-0 mb-5">
+            <div class="col-lg-4 mb-4">
               <a
                 href="https://birutekno.com/"
                 class="text-decoration-none"
@@ -253,7 +253,7 @@
                   <h4 class="m-0 ms-2 text-white">Website</h4>
                 </div>
               </div>
-              <p class="text-white">
+              <p class="text-white project-text">
                 "Birutekno Inc. is subsidiary of PT. Jimmy Group Technology.
                 Birutekno is a Software Development Company, based in Bandung
                 Indonesia. We provide AI Services, Web or Mobile Application,
@@ -261,8 +261,8 @@
               </p>
             </div>
           </div>
-          <div class="row align-items-center mb-5">
-            <div class="col-lg-4">
+          <div class="row align-items-center mb-md-0 mb-5">
+            <div class="col-lg-4 mb-4">
               <a href="#" class="text-decoration-none">
                 <vs-card>
                   <template #title>
@@ -288,7 +288,7 @@
                 </div>
                 <h4 class="m-0 ms-2 text-white">Dashboard</h4>
               </div>
-              <p class="text-white">
+              <p class="text-white project-text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Facilis molestias, quibusdam labore natus quod perferendis optio
                 ex ab ut sit, harum, rerum esse suscipit? Quasi nostrum expedita
@@ -296,8 +296,8 @@
               </p>
             </div>
           </div>
-          <div class="row align-items-center mb-5">
-            <div class="col-lg-4">
+          <div class="row align-items-center mb-md-0 mb-5">
+            <div class="col-lg-4 mb-4">
               <a href="#" class="text-decoration-none">
                 <vs-card>
                   <template #title>
@@ -325,7 +325,7 @@
                   <h4 class="m-0 ms-2 text-white">Dashboard</h4>
                 </div>
               </div>
-              <p class="text-white">
+              <p class="text-white project-text">
                 "VROS (Virtual Office Solutions) is the first Indonesian Suite
                 Application. To collaboration and increasing the productivity."
               </p>
@@ -358,12 +358,9 @@
             class="row justify-content-center align-items-center mt-5"
             data-aos="fade-up"
           >
-            <div
-              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
-            >
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip left dark>
                 <vs-button
-                  flat
                   success
                   @click="phpNotification('bottom-center', 'dark')"
                 >
@@ -377,9 +374,7 @@
                 <template #tooltip> PHP </template>
               </vs-tooltip>
             </div>
-            <div
-              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
-            >
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip dark>
                 <vs-button
                   success
@@ -394,10 +389,9 @@
                 <template #tooltip> Git </template>
               </vs-tooltip>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center animasi mb-lg-0">
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0">
               <vs-tooltip right dark>
                 <vs-button
-                  flat
                   success
                   @click="jsNotification('bottom-center', 'dark')"
                 >
@@ -415,9 +409,7 @@
             class="row justify-content-center align-items-center mt-5 mb-5"
             data-aos="fade-up"
           >
-            <div
-              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
-            >
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip left dark>
                 <vs-button
                   success
@@ -432,12 +424,9 @@
                 <template #tooltip> Bootstrap </template>
               </vs-tooltip>
             </div>
-            <div
-              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-5"
-            >
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip dark>
                 <vs-button
-                  flat
                   success
                   @click="htmlcssNotification('bottom-center', 'dark')"
                 >
@@ -450,9 +439,7 @@
                 <template #tooltip> HTML & CSS </template>
               </vs-tooltip>
             </div>
-            <div
-              class="col-lg-4 d-flex justify-content-center animasi mb-lg-0 mb-3"
-            >
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-3">
               <vs-tooltip right dark>
                 <vs-button
                   success
@@ -471,7 +458,7 @@
             class="row justify-content-center align-items-center mt-5"
             data-aos="fade-up"
           >
-            <div class="col d-flex justify-content-center animasi mb-lg-0 mb-5">
+            <div class="col d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip left dark>
                 <vs-button
                   success
@@ -486,12 +473,9 @@
                 <template #tooltip> Laravel </template>
               </vs-tooltip>
             </div>
-            <div
-              class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
-            >
+            <div class="col-lg-3 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip dark>
                 <vs-button
-                  flat
                   success
                   @click="reactNotification('bottom-center', 'dark')"
                 >
@@ -504,9 +488,7 @@
                 <template #tooltip> React JS </template>
               </vs-tooltip>
             </div>
-            <div
-              class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-5"
-            >
+            <div class="col-lg-3 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip dark>
                 <vs-button
                   success
@@ -521,13 +503,10 @@
                 <template #tooltip> PostgreSQL </template>
               </vs-tooltip>
             </div>
-            <div
-              class="col-lg-3 d-flex justify-content-center animasi mb-lg-0 mb-4"
-            >
+            <div class="col-lg-3 d-flex justify-content-center mb-lg-0 mb-4">
               <vs-tooltip right dark>
                 <vs-button
                   success
-                  flat
                   icon
                   @click="javaNotification('bottom-center', 'dark')"
                 >
@@ -800,12 +779,12 @@ export default {
   height: 140px;
   width: 150px;
 }
-.animasi:hover {
+/* .:hover {
   transition: 0.7s;
   transform: scale(1.1);
-}
+} */
 .home-konten h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 .home-konten .sub {
   color: #555;
@@ -873,10 +852,13 @@ span {
   color: white;
   box-shadow: 0 0 0 0.1rem #0275d8;
 }
-.about-animasi {
+.about- {
 }
 .biru-logo {
   height: 60px;
+}
+.project-text {
+  font-size: 18px;
 }
 @media only screen and (max-width: 600px) {
   .home-img {
@@ -907,7 +889,7 @@ span {
     font-size: 14px !important;
   }
   .project p {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   .project h1 {
     font-size: 24px !important;
