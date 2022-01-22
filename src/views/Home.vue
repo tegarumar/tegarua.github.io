@@ -323,13 +323,35 @@
                   />
                 </div>
                 <div class="d-flex align-items-center ms-2">
-                  <h4 class="m-0 ms-2 text-white">Dashboard</h4>
+                  <h4 class="m-0 ms-2 text-white">
+                    Website & Mobile (Android)
+                  </h4>
                 </div>
               </div>
               <p class="text-white project-text">
                 "VROS (Virtual Office Solutions) is the first Indonesian Suite
                 Application. To collaboration and increasing the productivity."
               </p>
+              <p class="text-white project-text">Download the App :</p>
+              <div class="d-flex">
+                <vs-button
+                  dark
+                  blank
+                  size="large"
+                  class="me-2"
+                  href="https://play.google.com/store/apps/details?id=org.vrosapp.meet"
+                >
+                  <i class="bx bxl-play-store me-2"></i> Google Play
+                </vs-button>
+                <vs-button
+                  dark
+                  blank
+                  size="large"
+                  href="https://apps.apple.com/us/app/id1532381007"
+                >
+                  <i class="bx bxl-apple me-2"></i> App Store
+                </vs-button>
+              </div>
             </div>
           </div>
 
@@ -534,62 +556,130 @@
     </svg>
     <div class="contact">
       <section id="contact">
-        <div class="container">
-          <div class="row text-center mb-3">
-            <div class="col">
-              <h2 class="text-white">Contact Me</h2>
+        <div class="line2 container d-flex justify-content-center">
+          <div class="container mb-5">
+            <div class="row text-center mb-3">
+              <div class="col">
+                <h2 class="text-white fw-bold">
+                  Overcome ignorance and <br />
+                  Fight for Equality
+                </h2>
+                <p class="text-white">
+                  Let's get started guys, i can't wait to be your Web Developer
+                  partner and to colaborate with you !. Anyway thanks for
+                  visiting to my Website, Hope you guys Enjoy it !
+                </p>
+                <h3 class="text-white fw-bold">Contact Me</h3>
+              </div>
             </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <form>
-                <div class="mb-3">
-                  <label for="Name" class="form-label text-white"
-                    >Full Name</label
-                  >
-                  <input
-                    autocomplete="off"
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    aria-describedby="name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label text-white">Email</label>
-                  <input
-                    autocomplete="off"
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    aria-describedby="email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="pesan" class="form-label text-white"
-                    >Message</label
-                  >
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
-                </div>
-                <vs-button success size="large" type="submit" class="text-pink"
-                  >Submit</vs-button
-                >
-              </form>
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <form>
+                  <div class="mb-3">
+                    <label for="Name" class="form-label text-white"
+                      >Full Name</label
+                    >
+                    <input
+                      autocomplete="off"
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      aria-describedby="name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-white"
+                      >Email</label
+                    >
+                    <input
+                      autocomplete="off"
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="pesan" class="form-label text-white"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="pesan"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <vs-button
+                      success
+                      block
+                      size="large"
+                      type="submit"
+                      class="text-pink"
+                      >Submit</vs-button
+                    >
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <footer class="text-black text-center pb-5 mt-5">
-        <p class="text-white">
-          Created with <b-icon icon="heart-fill" variant="danger"></b-icon> By
-          <a
-            target="_blank"
-            href="https://www.instagram.com/tegar.ua/"
-            class="text-white fw-bold"
-            >Tegar Umar Abdillah</a
+      <div class="container">
+        <footer class="text-black text-center pb-5 mt-5">
+          <div
+            class="row flex-lg-row flex-column-reverse bd-highlight d-flex align-items-center"
           >
-        </p>
-      </footer>
+            <div
+              class="col-lg-8 d-flex justify-content-md-end justify-content-center"
+            >
+              <p class="text-white">
+                Created with
+                <b-icon icon="heart-fill" variant="danger"></b-icon> By
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/tegar.ua/"
+                  class="text-white fw-bold"
+                  >Tegar Umar Abdillah</a
+                >
+              </p>
+            </div>
+            <div
+              class="col-lg-4 d-flex justify-content-md-end justify-content-center mb-md-0 mb-3"
+            >
+              <vs-button
+                size="large"
+                success
+                border
+                href="mailto:tegarumarabdillah@gmail.com"
+                class="d-flex align-items-center"
+              >
+                <i class="bx bxl-google-plus"></i>
+              </vs-button>
+              <vs-button
+                size="large"
+                success
+                blank
+                border
+                href="https://www.instagram.com/tegar.ua/"
+                class="d-flex align-items-center"
+              >
+                <i class="bx bxl-instagram"></i>
+              </vs-button>
+              <vs-button
+                size="large"
+                success
+                blank
+                border
+                href="https://www.linkedin.com/in/tegar-umar-abdillah-b2b02b219/"
+                class="d-flex align-items-center"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </vs-button>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   </div>
 </template>
@@ -935,6 +1025,15 @@ span {
   }
   .logo-php {
     height: 75px;
+  }
+  .contact h2 {
+    font-size: 20px;
+  }
+  .contact h3 {
+    font-size: 20px;
+  }
+  .contact p {
+    font-size: 12px;
   }
 }
 </style>
