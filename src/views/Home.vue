@@ -112,6 +112,21 @@
                               >
                             </div>
                           </div>
+                          <div class="container d-flex justify-content-center">
+                            <div
+                              class="row d-flex justify-content-center align-items-center"
+                            >
+                              <p>
+                                <b class="text-pink"> CV's</b> Made by
+                                <a
+                                  href="https://www.instagram.com/_naufalfzn/"
+                                  target="_blank"
+                                  class="text-decoration-none"
+                                  >@_naufalfzn</a
+                                >
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </vs-dialog>
@@ -122,7 +137,7 @@
             <div class="col-lg-5 d-flex justify-content-center align-items-end">
               <div class="home-img">
                 <img
-                  src="@/assets/img/man.svg"
+                  src="@/assets/img/man3.svg"
                   class="profile mt-5"
                   alt="logo"
                 />
@@ -221,6 +236,11 @@
                 Inspection, Proctoring Exam and many other services. Our current
                 product is Soca Rupa & Soca Ganita."
               </p>
+              <vs-button dark size="large" blank href="https://soca.ai/">
+                <i class="bx bx-globe me-2"></i>
+                Website
+                <template #animate> Click it </template>
+              </vs-button>
             </div>
           </div>
           <div class="row align-items-center mb-md-0 mb-5">
@@ -260,6 +280,11 @@
                 Indonesia. We provide AI Services, Web or Mobile Application,
                 Design and Digital Multimedia."
               </p>
+              <vs-button dark size="large" blank href="https://birutekno.com/">
+                <i class="bx bx-globe me-2"></i>
+                Website
+                <template #animate> Click it </template>
+              </vs-button>
             </div>
           </div>
           <div class="row align-items-center mb-md-0 mb-5">
@@ -631,7 +656,12 @@
             class="row flex-lg-row flex-column-reverse bd-highlight d-flex align-items-center"
           >
             <div
-              class="col-lg-8 d-flex justify-content-md-end justify-content-center"
+              class="col-lg-4 d-flex justify-content-start align-items-start logo-mobile"
+            >
+              <img src="@/assets/img/favicon-1.png" alt="" />
+            </div>
+            <div
+              class="col-lg-4 col-sm-8 d-flex justify-content-md-end justify-content-center"
             >
               <p class="text-white">
                 Created with
@@ -1034,6 +1064,9 @@ span {
   }
   .contact p {
     font-size: 12px;
+  }
+  .logo-mobile {
+    display: none !important;
   }
 }
 </style>
