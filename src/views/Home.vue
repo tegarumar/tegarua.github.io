@@ -5,6 +5,8 @@
         <div class="container mt-5 mb-5 text-center">
           <div class="row flex-lg-row flex-column-reverse bd-highlight">
             <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-center"
               class="col-lg-7 d-flex flex-column justify-content-end align-items-center"
             >
               <div class="home-konten">
@@ -134,7 +136,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 d-flex justify-content-center align-items-end">
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-center"
+              class="col-lg-5 d-flex justify-content-center align-items-end"
+            >
               <div class="home-img">
                 <img
                   src="@/assets/img/man3.svg"
@@ -159,7 +165,7 @@
       <div
         class="container about-"
         data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
+        data-aos-anchor-placement="bottom-bottom"
       >
         <div class="mt-5 mb-4 text-center">
           <div class="container">
@@ -177,7 +183,7 @@
       <div
         class="container"
         data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
+        data-aos-anchor-placement="bottom-bottom"
       >
         <div class="line">
           <p class="lead text-lg-center caption">
@@ -204,8 +210,14 @@
           <div class="d-flex justify-content-center">
             <h1 class="text-center text-white mb-5 line2">Projects</h1>
           </div>
-          <div class="row align-items-center mb-md-0 mb-5">
-            <div class="col-lg-4 d-flex justify-content-start mb-4">
+          <div
+            style="overflow-x: hidden"
+            class="row align-items-center mb-md-0 mb-5"
+          >
+            <div
+              data-aos="fade-right"
+              class="col-lg-4 d-flex justify-content-start mb-4"
+            >
               <a
                 href="https://soca.ai/"
                 class="text-decoration-none"
@@ -224,7 +236,10 @@
                 </vs-card>
               </a>
             </div>
-            <div class="col d-flex align-items-start flex-column">
+            <div
+              data-aos="fade-left"
+              class="col d-flex align-items-start flex-column"
+            >
               <div class="mb-2 d-flex">
                 <img src="@/assets/img/soca-text.svg" alt="" class="" />
                 <h4 class="m-0 ms-2 text-white">Website</h4>
@@ -243,8 +258,11 @@
               </vs-button>
             </div>
           </div>
-          <div class="row align-items-center mb-md-0 mb-5">
-            <div class="col-lg-4 mb-4">
+          <div
+            style="overflow-x: hidden"
+            class="row align-items-center mb-md-0 mb-5"
+          >
+            <div data-aos="fade-right" class="col-lg-4 mb-4">
               <a
                 href="https://birutekno.com/"
                 class="text-decoration-none"
@@ -263,7 +281,10 @@
                 </vs-card>
               </a>
             </div>
-            <div class="col d-flex align-items-start flex-column">
+            <div
+              data-aos="fade-left"
+              class="col d-flex align-items-start flex-column"
+            >
               <div class="d-flex justify-content-start mb-2">
                 <img
                   src="@/assets/img/biru-logo.svg"
@@ -287,8 +308,11 @@
               </vs-button>
             </div>
           </div>
-          <div class="row align-items-center mb-md-0 mb-5">
-            <div class="col-lg-4 mb-4">
+          <div
+            style="overflow-x: hidden"
+            class="row align-items-center mb-md-0 mb-5"
+          >
+            <div data-aos="fade-right" class="col-lg-4 mb-4">
               <a href="#" class="text-decoration-none">
                 <vs-card>
                   <template #title>
@@ -303,7 +327,10 @@
                 </vs-card>
               </a>
             </div>
-            <div class="col d-flex align-items-start flex-column">
+            <div
+              data-aos="fade-left"
+              class="col d-flex align-items-start flex-column"
+            >
               <div class="mb-2 d-flex">
                 <div class="d-flex align-items-end">
                   <img
@@ -322,8 +349,11 @@
               </p>
             </div>
           </div>
-          <div class="row align-items-center mb-md-0 mb-5">
-            <div class="col-lg-4 mb-4">
+          <div
+            style="overflow-x: hidden"
+            class="row align-items-center mb-md-0 mb-5"
+          >
+            <div data-aos="fade-right" class="col-lg-4 mb-4">
               <a href="#" class="text-decoration-none">
                 <vs-card>
                   <template #title>
@@ -338,7 +368,10 @@
                 </vs-card>
               </a>
             </div>
-            <div class="col d-flex align-items-start flex-column">
+            <div
+              data-aos="fade-left"
+              class="col d-flex align-items-start flex-column"
+            >
               <div class="d-flex justify-content-start mb-2">
                 <div class="d-flex align-items-end">
                   <img
@@ -599,7 +632,7 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-md-6">
-                <form>
+                <form @submit.prevent="submit" name="tegar-form-contact">
                   <div class="mb-3">
                     <label for="Name" class="form-label text-white"
                       >Full Name</label
@@ -610,6 +643,8 @@
                       class="form-control"
                       id="name"
                       aria-describedby="name"
+                      name="name"
+                      required
                     />
                   </div>
                   <div class="mb-3">
@@ -622,6 +657,8 @@
                       class="form-control"
                       id="email"
                       aria-describedby="email"
+                      name="email"
+                      required
                     />
                   </div>
                   <div class="mb-3">
@@ -630,7 +667,8 @@
                     >
                     <textarea
                       class="form-control"
-                      id="pesan"
+                      id="message"
+                      name="message"
                       rows="3"
                     ></textarea>
                   </div>
@@ -714,6 +752,11 @@
   </div>
 </template>
 <script>
+// ES6 Modules or TypeScript
+import Swal from "sweetalert2";
+
+// CommonJS
+
 export default {
   setup() {},
   data: () => ({
@@ -816,6 +859,27 @@ export default {
         position,
         title: "Java",
         text: `Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995.`,
+      });
+    },
+    submit() {
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyENiSOxPDsGdi-q2-Qo4GF-Hr1HVdz1Be5ZozidHmaWFgvwdlG43ZjRUdKdmCQK56Zaw/exec";
+      const form = document.forms["tegar-form-contact"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .then(
+            Swal.fire({
+              icon: "success",
+              title: "Success !",
+              text: "Thanks for contacting Me !",
+              confirmButtonColor: "#fa34af",
+              iconColor: "#fa34af",
+            })
+          )
+          .catch((error) => console.error("Error!", error.message));
       });
     },
   },

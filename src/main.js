@@ -8,7 +8,13 @@ import 'boxicons/css/boxicons.min.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import VueSweetalert2 from 'vue-sweetalert2';
+// import { SweetAlert } from 'sweetalert2/dist/sweetalert2';
 
+// If you don't need the styles, do not connect
+import 'sweetalert2/dist/sweetalert2.min.css';
+
+Vue.use(VueSweetalert2);
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
