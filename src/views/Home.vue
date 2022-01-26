@@ -616,73 +616,78 @@
       <section id="contact">
         <div class="line2 container d-flex justify-content-center">
           <div class="container mb-5">
-            <div class="row text-center mb-3">
-              <div class="col">
-                <h2 class="text-white fw-bold">
-                  Overcome ignorance and <br />
-                  Fight for Equality
-                </h2>
-                <p class="text-white">
-                  Let's get started guys, i can't wait to be your Web Developer
-                  partner and to colaborate with you !. Anyway thanks for
-                  visiting to my Website, Hope you guys Enjoy it !
-                </p>
-                <h3 class="text-white fw-bold">Contact Me</h3>
+            <div data-aos="fade-up">
+              <div class="row text-center mb-3">
+                <div class="col">
+                  <h2 class="text-white fw-bold">
+                    Overcome ignorance and <br />
+                    Fight for Equality
+                  </h2>
+                  <p class="text-white">
+                    Let's get started guys, i can't wait to be your Web
+                    Developer partner and to colaborate with you !. Anyway
+                    thanks for visiting to my Website, Hope you guys Enjoy it !
+                  </p>
+                  <h3 class="text-white fw-bold">Contact Me</h3>
+                </div>
               </div>
             </div>
+
             <div class="row justify-content-center">
               <div class="col-md-6">
-                <form @submit.prevent="submit" name="tegar-form-contact">
-                  <div class="mb-3">
-                    <label for="Name" class="form-label text-white"
-                      >Full Name</label
-                    >
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      aria-describedby="name"
-                      name="name"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label text-white"
-                      >Email</label
-                    >
-                    <input
-                      autocomplete="off"
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      aria-describedby="email"
-                      name="email"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="pesan" class="form-label text-white"
-                      >Message</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      name="message"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <vs-button
-                      success
-                      block
-                      size="large"
-                      type="submit"
-                      class="text-pink"
-                      >Submit</vs-button
-                    >
-                  </div>
-                </form>
+                <div data-aos="fade-up">
+                  <form @submit.prevent="submit" name="tegar-form-contact">
+                    <div class="mb-3">
+                      <label for="Name" class="form-label text-white"
+                        >Full Name</label
+                      >
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        aria-describedby="name"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label text-white"
+                        >Email</label
+                      >
+                      <input
+                        autocomplete="off"
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        aria-describedby="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="pesan" class="form-label text-white"
+                        >Message</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <vs-button
+                        success
+                        block
+                        size="large"
+                        type="submit"
+                        class="text-pink"
+                        >Submit</vs-button
+                      >
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
