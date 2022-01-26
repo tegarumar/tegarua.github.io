@@ -616,7 +616,7 @@
       <section id="contact">
         <div class="line2 container d-flex justify-content-center">
           <div class="container mb-5">
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center">
               <div class="row text-center mb-3">
                 <div class="col">
                   <h2 class="text-white fw-bold">
@@ -635,7 +635,7 @@
 
             <div class="row justify-content-center">
               <div class="col-md-6">
-                <div data-aos="fade-up">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
                   <form @submit.prevent="submit" name="tegar-form-contact">
                     <div class="mb-3">
                       <label for="Name" class="form-label text-white"
