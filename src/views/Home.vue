@@ -871,21 +871,18 @@ export default {
         "https://script.google.com/macros/s/AKfycbyENiSOxPDsGdi-q2-Qo4GF-Hr1HVdz1Be5ZozidHmaWFgvwdlG43ZjRUdKdmCQK56Zaw/exec";
       const form = document.forms["tegar-form-contact"];
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .then(
-            Swal.fire({
-              icon: "success",
-              title: "Success !",
-              text: "Thanks for contacting Me !",
-              confirmButtonColor: "#fa34af",
-              iconColor: "#fa34af",
-            })
-          )
-          .catch((error) => console.error("Error!", error.message));
-      });
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => console.log("Success!", response))
+        .then(
+          Swal.fire({
+            icon: "success",
+            title: "Success !",
+            text: "Thanks for contacting Me !",
+            confirmButtonColor: "#fa34af",
+            iconColor: "#fa34af",
+          })
+        )
+        .catch((error) => console.error("Error!", error.message));
     },
   },
 };
