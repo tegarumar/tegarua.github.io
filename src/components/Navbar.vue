@@ -102,6 +102,7 @@ export default {
     checkbox1: false,
     value: "",
     hasVisiblePassword: false,
+    color: "dark",
   }),
   computed: {
     getProgress() {

@@ -412,6 +412,47 @@
               </div>
             </div>
           </div>
+          <div
+            style="overflow-x: hidden"
+            class="row align-items-center mb-md-0 mb-5"
+          >
+            <div data-aos="fade-right" class="col-lg-4 mb-4">
+              <a href="#" class="text-decoration-none">
+                <vs-card>
+                  <template #title>
+                    <h3>CekBumil App</h3>
+                  </template>
+                  <template #img>
+                    <img src="@/assets/img/bumilapp.svg" alt="nlp" />
+                  </template>
+                  <template #text>
+                    <p>My First case study of Android app</p>
+                  </template>
+                </vs-card>
+              </a>
+            </div>
+            <div
+              data-aos="fade-left"
+              class="col d-flex align-items-start flex-column"
+            >
+              <div class="mb-2 d-flex align-items-center">
+                <div class="d-flex align-items-end">
+                  <img
+                    src="@/assets/img/bumil-logo.png"
+                    alt=""
+                    class="bumil-logo"
+                  />
+                </div>
+                <h4 class="m-0 ms-2 text-white">Android App</h4>
+              </div>
+              <p class="text-white project-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis molestias, quibusdam labore natus quod perferendis optio
+                ex ab ut sit, harum, rerum esse suscipit? Quasi nostrum expedita
+                repellendus corrupti neque!
+              </p>
+            </div>
+          </div>
 
           <a href="#" class="text-decoration-none"
             ><p class="m-0 text-center text-white mt-4 fw-bold">
@@ -965,6 +1006,10 @@ export default {
 .logo-vue {
   height: 140px;
   width: 150px;
+}
+.bumil-logo {
+  width: 50px;
+  height: 50px;
 }
 /* .:hover {
   transition: 0.7s;
