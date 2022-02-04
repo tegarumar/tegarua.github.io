@@ -144,6 +144,11 @@ export default {
 };
 </script>
 <style scoped>
+.bx-user,
+.bx-show-alt,
+.bx-hide {
+  color: #fa34af;
+}
 .text-pink {
   color: #fa34af;
 }

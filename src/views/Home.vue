@@ -446,10 +446,9 @@
                 <h4 class="m-0 ms-2 text-white">Android App</h4>
               </div>
               <p class="text-white project-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis molestias, quibusdam labore natus quod perferendis optio
-                ex ab ut sit, harum, rerum esse suscipit? Quasi nostrum expedita
-                repellendus corrupti neque!
+                My first case study was fun, this app is useful for checking
+                pregnancy health by online using this app. it's a great app
+                isn't it? unfortunately this app it's just an example :(
               </p>
             </div>
           </div>
@@ -928,7 +927,62 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
+.not-margin {
+  margin: 0px;
+  font-weight: normal;
+  padding: 10px;
+}
+.con-form {
+  width: 100%;
+}
+.con-form .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.con-form .flex a {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.con-form .flex a:hover {
+  opacity: 1;
+}
+.con-form .vs-checkbox-label {
+  font-size: 0.8rem;
+}
+.con-form .vs-input-content {
+  margin: 10px 0px;
+  width: calc(100%);
+}
+.con-form .vs-input-content .vs-input {
+  width: 100%;
+}
+.footer-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100%);
+}
+.footer-dialog .new {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 0.7rem;
+}
+.footer-dialog .new a {
+  color: rgba(var(--vs-primary), 1) !important;
+  margin-left: 6px;
+}
+.footer-dialog .new a:hover {
+  text-decoration: underline;
+}
+.footer-dialog .vs-button {
+  margin: 0px;
+}
+
+
 .responsive {
   display: inline;
 }
