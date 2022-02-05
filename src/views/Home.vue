@@ -689,6 +689,7 @@
                         aria-describedby="name"
                         name="name"
                         required
+                        icon-after
                       >
                         <template #icon><i class="bx bx-user"></i></template>
                       </vs-input>
@@ -705,6 +706,7 @@
                         aria-describedby="email"
                         name="email"
                         required
+                        icon-after
                       >
                         <template #icon
                           ><i class="bx bx-mail-send"></i
