@@ -708,9 +708,7 @@
                         required
                         icon-after
                       >
-                        <template #icon
-                          ><i class="bx bx-mail-send"></i
-                        ></template>
+                        <template #icon><i class="bx bx-at"></i></template>
                       </vs-input>
                     </div>
                     <div class="mb-3">
@@ -943,7 +941,7 @@ export default {
 </script>
 <style>
 .bx-user,
-.bx-mail-send {
+.bx-at {
   color: #fa34af;
 }
 .vs-input {
