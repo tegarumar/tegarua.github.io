@@ -66,7 +66,7 @@
                 </vs-input>
               </div>
               <div class="flex">
-                <vs-checkbox v-model="checkbox1">Remember me</vs-checkbox>
+                <vs-checkbox dark v-model="checkbox1">Remember me</vs-checkbox>
                 <a href="#">Forgot Password?</a>
               </div>
             </div>

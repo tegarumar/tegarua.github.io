@@ -681,40 +681,52 @@
                       <label for="Name" class="form-label text-white"
                         >Full Name</label
                       >
-                      <input
+
+                      <vs-input
                         autocomplete="off"
-                        type="text"
-                        class="form-control"
+                        class="mb-2"
                         id="name"
                         aria-describedby="name"
                         name="name"
                         required
-                      />
+                      >
+                        <template #icon><i class="bx bx-user"></i></template>
+                      </vs-input>
                     </div>
                     <div class="mb-3">
                       <label for="email" class="form-label text-white"
                         >Email</label
                       >
-                      <input
+                      <vs-input
                         autocomplete="off"
                         type="email"
-                        class="form-control"
+                        class="mb-2"
                         id="email"
                         aria-describedby="email"
                         name="email"
                         required
-                      />
+                      >
+                        <template #icon
+                          ><i class="bx bx-mail-send"></i
+                        ></template>
+                      </vs-input>
                     </div>
                     <div class="mb-3">
                       <label for="pesan" class="form-label text-white"
                         >Message</label
                       >
                       <textarea
-                        class="form-control"
+                        class="form-control text-area"
                         id="message"
                         name="message"
                         rows="3"
                       ></textarea>
+                      <!-- <vs-input
+                        class="text-area"
+                        id="message"
+                        name="message"
+                        required
+                      /> -->
                     </div>
                     <div class="d-flex justify-content-center">
                       <vs-button
@@ -928,6 +940,21 @@ export default {
 };
 </script>
 <style>
+.bx-user,
+.bx-mail-send {
+  color: #fa34af;
+}
+.vs-input {
+  width: 100%;
+}
+.form-control {
+  border-radius: 12px;
+  background: rgba(var(--vs-gray-2), 1);
+  color: rgba(var(--vs-text), 1);
+}
+/* .text-area .vs-input {
+  height: 100px !important;
+} */
 .not-margin {
   margin: 0px;
   font-weight: normal;
@@ -981,7 +1008,6 @@ export default {
 .footer-dialog .vs-button {
   margin: 0px;
 }
-
 
 .responsive {
   display: inline;
