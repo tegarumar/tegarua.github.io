@@ -99,7 +99,6 @@ h1,
 }
 
 .notfound .notfound-404 h1 {
-  font-family: maven pro, sans-serif;
   font-weight: 900;
   font-size: 276px;
   margin: 0;
@@ -112,7 +111,6 @@ h1,
 }
 
 .notfound h2 {
-  font-family: maven pro, sans-serif;
   font-size: 46px;
   font-weight: 900;
   text-transform: uppercase;
@@ -120,7 +118,6 @@ h1,
 }
 
 .notfound p {
-  font-family: maven pro, sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -128,7 +125,6 @@ h1,
 }
 
 .notfound a {
-  font-family: maven pro, sans-serif;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;

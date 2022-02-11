@@ -219,7 +219,7 @@
               class="col-lg-4 d-flex justify-content-start mb-4"
             >
               <a
-                href="https://soca.ai/"
+                href="http://soca.ai/home"
                 class="text-decoration-none"
                 target="_blank"
               >
@@ -251,7 +251,7 @@
                 Inspection, Proctoring Exam and many other services. Our current
                 product is Soca Rupa & Soca Ganita."
               </p>
-              <vs-button dark size="large" blank href="https://soca.ai/">
+              <vs-button dark size="large" blank href="http://soca.ai/home">
                 <i class="bx bx-globe me-2"></i>
                 Website
                 <template #animate> Click it </template>
