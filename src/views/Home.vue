@@ -1322,6 +1322,10 @@ span {
     height: 100px;
     width: 100px;
   }
+  .logo-mongo {
+    height: 110px;
+    width: 45px;
+  }
   .logo-vue {
     height: 90px;
     width: 100px;
