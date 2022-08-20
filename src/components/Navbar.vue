@@ -81,7 +81,15 @@
           </vs-dialog>
         </div>
 
-        <vs-button dark @click="aktiv = !aktiv">See My CV</vs-button>
+        <vs-button dark>
+          <a
+            href="assets/tegar_cv.pdf"
+            target="_blank"
+            class="no-underline text-white"
+          >
+            See My CV
+          </a>
+        </vs-button>
         <vs-dialog not-close auto-width not-padding v-model="aktiv">
           <div class="con-image">
             <img src="@/assets/img/cv-tegar.jpg" alt="" />
@@ -139,6 +147,11 @@ export default {
       }
 
       return progress;
+    },
+  },
+  methods: {
+    getCv() {
+      this.$router.push("assets/tegar_cv.pdf");
     },
   },
 };
@@ -213,6 +226,9 @@ export default {
 }
 .footer-dialog .vs-button {
   margin: 0px;
+}
+.no-underline {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {

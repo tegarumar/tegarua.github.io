@@ -30,6 +30,10 @@ Vue.use(Vuesax, {
   }
 })
 
+module.export ={
+  assetsDir: 'assets'
+}
+
 new Vue({
   router,
   render: h => h(App),
