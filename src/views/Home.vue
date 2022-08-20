@@ -114,21 +114,6 @@
                               >
                             </div>
                           </div>
-                          <div class="container d-flex justify-content-center">
-                            <div
-                              class="row d-flex justify-content-center align-items-center"
-                            >
-                              <p>
-                                <b class="text-pink"> CV's</b> Made by
-                                <a
-                                  href="https://www.instagram.com/_naufalfzn/"
-                                  target="_blank"
-                                  class="text-decoration-none"
-                                  >@_naufalfzn</a
-                                >
-                              </p>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </vs-dialog>
@@ -174,7 +159,7 @@
           <section class="jumbotron text-center line">
             <h1 class="display-4">Tegar Umar <span> Abdillah </span></h1>
             <p class="lead job">
-              Web Programmer | <span>Software Engineering</span>
+              Web Developer | <span>Software Engineering</span>
             </p>
           </section>
         </div>
@@ -190,14 +175,63 @@
             Hi, my name is Tegar Umar Abdillah. I have an interest in
             <span> software engineering</span> and until now I'm still learning
             more about <span> software engineering</span>. I am a person who
-            focuses on learning about new things. Anyway i'm Web Progammer
-            especially <span> Frontend Developer</span>, for Backend i'm still
-            learning on it.
+            focuses on learning about new things. Anyway i'm Web Developer, a
+            <span> Fullstack Developer</span>
           </p>
         </div>
       </div>
     </section>
     <section id="project">
+      <div class="row mt-4">
+        <div class="col-md-10 mx-auto">
+          <!-- Timeline -->
+          <div class="timeline timeline-one mt-4">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <img
+                src="http://birutekno.com/img/birutekno.fa5b3865.svg"
+                alt=""
+                class="mb-0"
+              />
+              <p class="my-3">Nov 2021 - Feb 2022 (Prakerin)</p>
+              <p>
+                Stack : Laravel, Vue JS, PostgreSQL, jQuery, PHP, React Native,
+                JavaScript
+                <br />
+                Vuex, Spring Boot, Java, MongoDB, Bootstrap, Tailwind CSS
+              </p>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <img
+                src="http://birutekno.com/img/birutekno.fa5b3865.svg"
+                alt=""
+                class="mb-0"
+              />
+              <p class="my-3">March 2022 - Jul 2022 (Internship)</p>
+              <p>
+                Stack : Vue JS, Vuex, jQuery, Spring Boot, Java, MongoDB,
+                Bootstrap, JavaScript
+              </p>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <img
+                src="http://birutekno.com/img/birutekno.fa5b3865.svg"
+                alt=""
+                class="mb-0"
+              />
+              <p class="my-3">Aug 2022 - Present (Full-time)</p>
+              <p>
+                Stack : Vue JS, Vuex, jQuery, Spring Boot, Java, MongoDB,
+                Bootstrap, <br />
+                JavaScript, PHP, Laravel, PostgreSQL
+              </p>
+            </div>
+          </div>
+          <!--End of Timeline-->
+        </div>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffa8de"
@@ -482,9 +516,7 @@
           <div class="d-flex justify-content-center">
             <h1 class="text-center mt-5 mb-5 line3">My Skills</h1>
           </div>
-          <div class="mb-3">
-            <h2 class="line3">Using now :</h2>
-          </div>
+
           <div
             class="row justify-content-center align-items-center mt-5"
             data-aos="fade-up"
@@ -582,14 +614,11 @@
               </vs-tooltip>
             </div>
           </div>
-          <div class="mb-3">
-            <h2 class="line3">Learning :</h2>
-          </div>
           <div
             class="row justify-content-center align-items-center mt-5"
             data-aos="fade-up"
           >
-            <div class="col d-flex justify-content-center mb-lg-0 mb-5">
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip left dark>
                 <vs-button
                   success
@@ -604,7 +633,7 @@
                 <template #tooltip> Laravel </template>
               </vs-tooltip>
             </div>
-            <div class="col-lg-3 d-flex justify-content-center mb-lg-0 mb-5">
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip dark>
                 <vs-button
                   success
@@ -616,10 +645,10 @@
                     class="logo-react"
                   />
                 </vs-button>
-                <template #tooltip> React JS </template>
+                <template #tooltip> React Native </template>
               </vs-tooltip>
             </div>
-            <div class="col-lg-3 d-flex justify-content-center mb-lg-0 mb-5">
+            <div class="col-lg-4 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip dark>
                 <vs-button
                   success
@@ -634,20 +663,39 @@
                 <template #tooltip> PostgreSQL </template>
               </vs-tooltip>
             </div>
-            <div class="col-lg-3 d-flex justify-content-center mb-lg-0 mb-4">
+          </div>
+          <div
+            class="row justify-content-center align-items-center mt-5"
+            data-aos="fade-up"
+          >
+            <div class="col-lg-6 d-flex justify-content-center mb-lg-0 mb-5">
+              <vs-tooltip left dark>
+                <vs-button
+                  success
+                  @click="springNotification('bottom-center', 'dark')"
+                >
+                  <img
+                    src="@/assets/img/spingboot.png"
+                    alt="react"
+                    class="logo-react"
+                  />
+                </vs-button>
+                <template #tooltip> Spring </template>
+              </vs-tooltip>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center mb-lg-0 mb-5">
               <vs-tooltip right dark>
                 <vs-button
                   success
-                  icon
-                  @click="javaNotification('bottom-center', 'dark')"
+                  @click="mongoNotification('bottom-center', 'dark')"
                 >
                   <img
-                    src="@/assets/img/java.png"
-                    alt="java"
-                    class="logo-size"
+                    src="@/assets/img/mongodb.png"
+                    alt="react"
+                    class="logo-mongo"
                   />
                 </vs-button>
-                <template #tooltip> Java </template>
+                <template #tooltip> Mongo DB </template>
               </vs-tooltip>
             </div>
           </div>
@@ -928,6 +976,26 @@ export default {
         text: `Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995.`,
       });
     },
+    springNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        flat: true,
+        position,
+        title: "Spring",
+        text: `Spring adalah kerangka kerja aplikasi dan inversi wadah kontrol untuk platform Java. Fitur inti kerangka kerja ini dapat digunakan oleh aplikasi Java apa pun, tetapi ada ekstensi untuk membangun aplikasi web di atas platform Java EE.`,
+      });
+    },
+    mongoNotification(position = null, color) {
+      //eslint-disable-next-line no-unused-vars
+      const noti = this.$vs.notification({
+        color,
+        flat: true,
+        position,
+        title: "Mongo DB",
+        text: `MongoDB adalah sistem basis data berorentasi dokumen lintas platform. Diklasifikasikan sebagai basis data "NoSQL"`,
+      });
+    },
     submit() {
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbyENiSOxPDsGdi-q2-Qo4GF-Hr1HVdz1Be5ZozidHmaWFgvwdlG43ZjRUdKdmCQK56Zaw/exec";
@@ -1092,6 +1160,10 @@ export default {
 .logo-react {
   height: 150px;
   width: 150px;
+}
+.logo-mongo {
+  height: 150px;
+  width: 80px;
 }
 .logo-vue {
   height: 140px;
